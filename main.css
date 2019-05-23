@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+div.main {
+    position: absolute;
+    z-index: 10000;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 2px;
+}
+
+div.background {
+    position: fixed;
+    z-index: -10000;
+    height: 100%;
+    width: 100%;
+    background-color: #56C5EE;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h2 {
+    color: #FFFFFF;
+    font-weight: bold;
+    font-family: Helvetica;
+    font-size: 175%;
+    margin-bottom: 25px;
+    -webkit-font-smoothing: antialiased;
+}
+
+p {
+    color: #FFFFFF;
+    font-family: Helvetica;
+    font-size: 125%;
+    margin-bottom: 25px;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    color: #FFFFFF;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+}
+
+a:hover {
+    color: #EEEEEE;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+div.about {
+    text-align: right;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+p.website {
+    color: #EEEEEE;
+    font-family: Helvetica;
+    font-size: 90%;
+    -webkit-font-smoothing: antialiased;
+}
+
+a.website {
+    color: #EEEEEE;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 226, 140, 0.5);
+}
+
+a.website:hover {
+    color: #FFFFFF;
+    border-bottom: 1px solid rgba(255, 226, 140, 1);
+}
+
+div.website {
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+div.partner {
+    text-align: center;
+    width: 90%;
+    height: auto;
+    margin: auto;
+}
+
+a.partner {
+    display: inline-flex;
+    align-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    color: #56C5EE;
+    border-radius: 2px;
+    padding: 10px 10px 10px 0px;
+    height: 128px;
+    width: 256px;
+    font-family: Helvetica;
+    font-size: 125%;
+    margin: 0px 10px 10px 10px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+a.partner:hover {
+    box-shadow: 2px 2px;
+}
+
+img.partner {
+    display: inline-flex;
+    max-width: 64px;
+    min-width: 64px;
+    max-height: 64px;
+    min-height: 64px;
+    position: relative;
+    padding: 0px 10px 0px 10px;
+    text-align: center;
+}
