@@ -19,6 +19,7 @@ div.background {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-image: url(/res/avatar.png);
 }
 
 h2 {
@@ -54,6 +55,7 @@ div.about {
     text-align: right;
     max-width: 100%;
     max-height: 100%;
+    padding: 100px;
 }
 
 p.website {
@@ -93,7 +95,7 @@ a.partner {
     align-content: center;
     background-color: rgba(238, 238, 238, 0.7);
     border: 2px solid rgba(238, 238, 238, 0.7);
-    color: #56C5EE;
+    color: #58a3bf;
     border-radius: 2px;
     padding: 10px 10px 10px 0px;
     height: 128px;
@@ -109,7 +111,10 @@ a.partner {
 }
 
 a.partner:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    height: 150px;
+    width: 300px;
 }
 
 img.partner {
@@ -121,4 +126,14 @@ img.partner {
     position: relative;
     padding: 0px 10px 0px 10px;
     text-align: center;
+}
+
+@media screen and (max-width: 800px),
+screen and (orientation: portrait) {
+    div.about {
+        padding: 25px;
+    }
+    div.background {
+        background-image: url(/res/small_avatar.png);
+    }
 }
