@@ -134,6 +134,6 @@ screen and (orientation: portrait) {
         padding: 25px;
     }
     div.background {
-        background-image: url(/res/small_avatar.png);
+        background-image: url(/res/small_avatar.svg);
     }
 }
