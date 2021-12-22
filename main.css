@@ -19,7 +19,7 @@ div.background {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(/res/avatar.png);
+    background-image: url(/res/avatar.svg);
 }
 
 h2 {
@@ -55,6 +55,7 @@ div.about {
     text-align: right;
     max-width: 100%;
     max-height: 100%;
+    min-height: 70vh;
     padding: 100px;
 }
 
@@ -81,16 +82,17 @@ div.website {
     text-align: center;
     width: 100%;
     height: auto;
+    padding-top: 20px;
 }
 
-div.partner {
+div.links {
     text-align: center;
     width: 90%;
     height: auto;
     margin: auto;
 }
 
-a.partner {
+a.links {
     display: inline-flex;
     align-content: center;
     background-color: rgba(238, 238, 238, 0.7);
@@ -110,12 +112,12 @@ a.partner {
     transition: all 0.2s ease-in-out;
 }
 
-a.partner:hover {
+a.links:hover {
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
 }
 
-img.partner {
+img.links {
     display: inline-flex;
     max-width: 64px;
     min-width: 64px;
