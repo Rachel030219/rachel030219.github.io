@@ -3,6 +3,12 @@
     margin: 0;
 }
 
+html, body, div.main {
+    width: -webkit-fill-available;
+    width: fill-available;
+    width: -moz-available;
+}
+
 div.main {
     position: absolute;
     z-index: 10000;
@@ -19,7 +25,7 @@ div.background {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(/res/avatar.svg);
+    background-image: url(./res/avatar.svg);
 }
 
 h2 {
@@ -93,6 +99,7 @@ div.links {
 }
 
 a.links {
+    box-sizing: border-box;
     display: inline-flex;
     align-content: center;
     background-color: rgba(238, 238, 238, 0.7);
@@ -101,15 +108,15 @@ a.links {
     border-radius: 2px;
     padding: 10px 10px 10px 0px;
     height: 128px;
-    width: 256px;
+    width: 100%;
     font-family: Helvetica;
     font-size: 125%;
-    margin: 0px 10px 10px 10px;
     position: relative;
     align-items: center;
     justify-content: center;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
+    backdrop-filter: blur(20px);
 }
 
 a.links:hover {
@@ -135,7 +142,24 @@ img.links {
     background-color: rgba(26, 49, 89, 0.2);
     font-size: 1.5rem;
     font-weight: bold;
+    backdrop-filter: blur(20px);
 }
+
+#links ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(256px, 1fr));
+    grid-gap: 1rem;
+    justify-content: space-between;
+}
+
+#links ul::after {
+    content: "";
+    flex: auto;
+} 
 
 @media screen and (max-width: 800px),
 screen and (orientation: portrait) {
